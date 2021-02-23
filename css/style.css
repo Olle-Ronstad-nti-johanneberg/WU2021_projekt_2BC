@@ -1,0 +1,86 @@
+body {
+    margin: 0px;
+    background-color: rgb(16, 19, 24);
+}
+a {
+    color: white;
+    text-decoration: none;
+}
+header {
+    display: flex;
+    height: 50vh;
+    width: 100vw;
+    background-color: rgb(16, 19, 24);
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 500%;
+    transition: 1s;
+    color: white;
+}
+main {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: dimgrey;
+    justify-content: center;
+
+}
+
+section {
+    background-color: rgb(40, 62, 80);
+    margin: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 400%;
+    height: 300px;
+    width: 200px;
+    transition: 1s;
+    color: white;
+}
+nav {
+    display: flex;
+    width: 100vw;
+    height: 40px;
+    background-color: rgb(129, 31, 31);
+    justify-content: space-around;
+    align-items: center;
+    transition: 1s;
+
+}
+.navitem{
+    display: flex;
+    background-color: rgb(44, 45, 49);
+    margin: 5px;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+@media screen and (max-width: 1000px){
+    section {
+        width: 80%;
+        height: 300px;
+    }
+    header {
+        height: 100vh;
+    }
+    nav {
+        position: fixed;
+        width: 40px;
+        height: 40px;
+        background-color:  rgb(129, 31, 31);
+        border-radius: 0px 0px 15px 0px;
+        display: flex;
+    }
+    .navitem{
+        display: none;
+    }
+    .navitemshow{
+        display: flex;
+    }
+    .LargeNav{
+        height: 100vh;
+        width: 50vw;
+        border-radius: 0px;
+        
+    }
+}
