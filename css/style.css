@@ -41,7 +41,7 @@ nav {
     display: flex;
     width: 100vw;
     height: 40px;
-    background-color: rgb(129, 31, 31);
+    background-color: rgb(0, 68, 131);
     justify-content: space-around;
     align-items: center;
     transition: 1s;
@@ -67,7 +67,7 @@ nav {
         position: fixed;
         width: 40px;
         height: 40px;
-        background-color:  rgb(129, 31, 31);
+        background-color:  rgb(0, 68, 131);
         border-radius: 0px 0px 15px 0px;
         display: flex;
     }
