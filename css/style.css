@@ -1,23 +1,49 @@
+:root {
+    --Main-bg-color: #1E1E1E;
+    --Selection-bg-color: #3A3D41;
+    --Nav-bg-color: #404040;
+    --Hower-Color: #1a3f50;
+    font-family: consolas;
+    margin:0px;
+}
+
+
 body {
     margin: 0px;
-    background-color: rgb(16, 19, 24);
+    background-color: var(--Main-bg-color);
 }
 a {
     color: white;
     text-decoration: none;
 }
+
+.textSecColor1{
+    color: #d7ba7d;
+}
+
+.textSecColor2{
+    color: #9cdcfe;
+}
+
+.textSecColor3{
+    color: #6fb561;
+}
+
+
 header {
     display: flex;
-    height: 50vh;
+    flex-direction: column;
+    height: 60vh;
     width: 100vw;
-    background-color: rgb(16, 19, 24);
+    background-color: var(--Main-bg-color);
     justify-content: center;
     align-items: center;
     text-align: center;
-    font-size: 500%;
-    transition: 1s;
+    font-size: 200%;
     color: white;
+    margin: 0px;
 }
+
 main {
     display: flex;
     flex-wrap: wrap;
@@ -26,34 +52,54 @@ main {
 
 }
 
-section {
-    background-color: rgb(40, 62, 80);
+section{
+    background-color: var(--Selection-bg-color);
     margin: 10px;
     padding: 10px;
     border-radius: 5px;
-    font-size: 400%;
+    font-size: 200%;
     height: 300px;
     width: 200px;
-    transition: 1s;
-    color: white;
+    color: white ;
+    text-align: center;
 }
 nav {
+    position: fixed;
     display: flex;
-    width: 100vw;
-    height: 40px;
-    background-color: rgb(0, 68, 131);
+    width: 60px;
+    height: 60px;
+    border-radius: 0px 0px 15px 0px;
+    background-color: var(--Nav-bg-color);
     justify-content: space-around;
     align-items: center;
-    transition: 1s;
+    
+    transition: 0.5s;
+}
 
+.LargeNav{
+    height: 80px;
+    width: 100vw;
+    border-radius: 0px;
+    
 }
 .navitem{
-    display: flex;
-    background-color: rgb(44, 45, 49);
+    display: none;
+    background-color: #2c2d31;
     margin: 5px;
     padding: 5px;
     border-radius: 5px;
+    text-align: center;
 }
+
+.navitem:hover {
+    background-color: var(--Hower-Color);
+    color: #d7ba7d;
+}
+
+.navitemshow{
+    display: block;
+}
+
 
 @media screen and (max-width: 1000px){
     section {
@@ -66,21 +112,18 @@ nav {
     nav {
         position: fixed;
         width: 40px;
-        height: 40px;
-        background-color:  rgb(0, 68, 131);
+        height: 40px;;
         border-radius: 0px 0px 15px 0px;
         display: flex;
     }
-    .navitem{
-        display: none;
-    }
-    .navitemshow{
-        display: flex;
-    }
+
+    
+
     .LargeNav{
         height: 100vh;
         width: 50vw;
         border-radius: 0px;
+        flex-direction: column;
         
     }
 }
