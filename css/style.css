@@ -44,7 +44,7 @@ header {
     margin: 0px;
 }
 
-main {
+#MainPageMain {
     display: flex;
     flex-wrap: wrap;
     background-color: dimgrey;
@@ -52,7 +52,13 @@ main {
 
 }
 
-section{
+#ArtworkMain {
+    display: flex;
+    background-color: dimgrey;
+    flex-direction: column;
+}
+
+.MainPageSection {
     background-color: var(--Selection-bg-color);
     margin: 10px;
     padding: 10px;
@@ -63,6 +69,19 @@ section{
     color: white ;
     text-align: center;
 }
+
+.ArtworkSection0 {
+    flex-direction: row-reverse;
+    width: 100vw;
+}
+
+.ArtworkImgcontainer0 {
+    width: 400px;
+    height: 400px;
+    background-color: rgb(241, 0, 181);
+}
+
+
 nav {
     position: fixed;
     display: flex;
@@ -102,13 +121,15 @@ nav {
 
 
 @media screen and (max-width: 1000px){
-    section {
-        width: 80%;
+    .MainPageSection {
+        width: 80vw;
         height: 300px;
     }
+    
     header {
         height: 100vh;
     }
+
     nav {
         position: fixed;
         width: 40px;
@@ -116,8 +137,6 @@ nav {
         border-radius: 0px 0px 15px 0px;
         display: flex;
     }
-
-    
 
     .LargeNav{
         height: 100vh;
