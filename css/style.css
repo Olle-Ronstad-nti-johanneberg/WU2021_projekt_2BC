@@ -3,6 +3,10 @@
     --Selection-bg-color: #3A3D41;
     --Nav-bg-color: #404040;
     --Hower-Color: #1a3f50;
+    --textSecColor0:  #d7ba7d;
+    --textSecColor1:  #9cdcfe;
+    --textSecColor2:  #6fb561;
+    
     font-family: consolas;
     margin:0px;
 }
@@ -18,15 +22,15 @@ a {
 }
 
 .textSecColor1{
-    color: #d7ba7d;
+    color: var(--textSecColor0);
 }
 
 .textSecColor2{
-    color: #9cdcfe;
+    color: var(--textSecColor1);
 }
 
 .textSecColor3{
-    color: #6fb561;
+    color: var(--textSecColor2);
 }
 
 
@@ -34,7 +38,7 @@ header {
     display: flex;
     flex-direction: column;
     height: 60vh;
-    width: 100vw;
+    width: 100%;
     background-color: var(--Main-bg-color);
     justify-content: center;
     align-items: center;
@@ -70,24 +74,62 @@ header {
     text-align: center;
 }
 
-.ArtworkSection0 {
+.ArtworkSection0{
     display: flex;
     flex-direction: row;
-    width: 100vw;
+    width: 100%;
     flex-wrap: nowrap;
+}
+
+.ArtworkSection1{
+    display: flex;
+    flex-direction: row-reverse;
+    flex-wrap: nowrap;
+    width: 100%;
 }
 
 .ArtworkImgcontainer0{
     flex-grow: 0;
-    width: 400px ;
-    min-width: 400px;
-    height: 400px ;
-    background-color: rgb(241, 0, 181);
+    width: 50vw;
+    min-width: 50vw;
+    height: 30vw ;
+    background-color: var(--Selection-bg-color);
     margin: 50px 50px 50px 0;
     border-radius: 0px 15px 15px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
-.ArtworkImgcontainer1
+.ArtworkImgcontainer1 {
+    flex-grow: 0;
+    width: 50vw;
+    min-width: 50vw;
+    height: 30vw ;
+    background-color: var(--Selection-bg-color);
+    margin: 50px 0px 50px 50px;
+    border-radius: 15px 0px 0px 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 
+#img0 {
+    width: 90%;
+    height: 90%;
+    background-image: url(../img/SliceOfEarth.png);
+    background-position: center;
+    background-size: 110%;
+    border-radius: 5px;
+}
+
+#img1 {
+    width: 90%;
+    height: 90%;
+    background-image: url(../img/BrokenOrb.png);
+    background-position: center;
+    background-size: 110%;
+    border-radius: 5px;
+}
 
 .ArtworkTextContainer {
     display: flex;
@@ -95,6 +137,7 @@ header {
     justify-content: center;
     flex-direction: column;
     align-items: center;
+    font-size: 150%;
 }
 
 
@@ -164,16 +207,29 @@ nav {
 
     .ArtworkImgcontainer0 {
         flex-grow: 0;
-        width: 400px ;
-        min-width: 400px;
-        height: 400px ;
-        background-color: rgb(241, 0, 181);
-        margin: 10px;
+        width: 75vw ;
+        height: 40vw ;
+        margin: 40px 10px 10px 10px;
         border-radius: 20px;
         border-radius: 15px;
     }
 
+    .ArtworkImgcontainer1 {
+        flex-grow: 0;
+        width: 75vw ;
+        height: 40vw ;
+        margin: 40px 10px 10px 10px;
+        border-radius: 15px;
+    }
+    
     .ArtworkSection0 {
+        display: flex;
+        flex-direction: column;
+        width: 100vw;
+        flex-wrap: nowrap;
+        align-items: center;
+    }
+    .ArtworkSection1 {
         display: flex;
         flex-direction: column;
         width: 100vw;
