@@ -94,7 +94,7 @@ header {
     min-width: 50vw;
     height: 30vw ;
     background-color: var(--Selection-bg-color);
-    margin: 50px 50px 50px 0;
+    margin: 50px 0px 50px 0;
     border-radius: 0px 15px 15px 0px;
     display: flex;
     align-items: center;
@@ -106,7 +106,7 @@ header {
     min-width: 50vw;
     height: 30vw ;
     background-color: var(--Selection-bg-color);
-    margin: 50px 0px 50px 50px;
+    margin: 50px 0px 50px 0px;
     border-radius: 15px 0px 0px 15px;
     display: flex;
     align-items: center;
@@ -138,6 +138,10 @@ header {
     flex-direction: column;
     align-items: center;
     font-size: 150%;
+    padding: 30px;
+}
+.ArtworkTextContainer h2 {
+    color: var(--textSecColor1);
 }
 
 
@@ -150,7 +154,9 @@ nav {
     background-color: var(--Nav-bg-color);
     justify-content: space-around;
     align-items: center;
-    
+    background-image: url(../img/Hamburger_icon.svg);
+    background-position: center;
+    background-size: 100%;
     transition: 0.5s;
 }
 
@@ -158,6 +164,7 @@ nav {
     height: 80px;
     width: 100vw;
     border-radius: 0px;
+    background-image: none;
     
 }
 .navitem{
