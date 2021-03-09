@@ -58,8 +58,9 @@ header {
 
 #ArtworkMain {
     display: flex;
-    background-color: dimgrey;
+    background-color: var(--Main-bg-color);
     flex-direction: column;
+    color: white;
 }
 
 .MainPageSection {
@@ -214,19 +215,18 @@ nav {
 
     .ArtworkImgcontainer0 {
         flex-grow: 0;
-        width: 75vw ;
-        height: 40vw ;
-        margin: 40px 10px 10px 10px;
-        border-radius: 20px;
-        border-radius: 15px;
+        width: 100vw ;
+        height: 56vw ;
+        margin: 40px 0px;
+        border-radius: 0px;
     }
 
     .ArtworkImgcontainer1 {
         flex-grow: 0;
-        width: 75vw ;
-        height: 40vw ;
-        margin: 40px 10px 10px 10px;
-        border-radius: 15px;
+        width: 100vw ;
+        height: 56vw ;
+        margin: 40px 0px;
+        border-radius: 0px;
     }
     
     .ArtworkSection0 {
