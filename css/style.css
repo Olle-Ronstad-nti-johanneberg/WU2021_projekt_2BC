@@ -62,6 +62,10 @@ header {
     flex-direction: column;
     color: white;
 }
+#EquipmentPage {
+    background-color: var(--Main-bg-color);
+    color: white;
+}
 
 .MainPageSection {
     background-color: var(--Selection-bg-color);
@@ -132,7 +136,15 @@ header {
     border-radius: 5px;
 }
 
-.ArtworkTextContainer {
+.equipmentIMG {
+    width: 40vw;
+    min-width: 40vw;
+    margin: 10px;
+    border-radius: 5px;
+}
+
+
+.TextContainer {
     display: flex;
     flex-grow: 1;
     justify-content: center;
@@ -141,7 +153,7 @@ header {
     font-size: 150%;
     padding: 30px;
 }
-.ArtworkTextContainer h2 {
+.TextContainer h2 {
     color: var(--textSecColor1);
 }
 
@@ -226,6 +238,11 @@ nav {
         width: 100vw ;
         height: 56vw ;
         margin: 40px 0px;
+        border-radius: 0px;
+    }
+    .equipmentIMG {
+        width: 100vw;
+        margin: 0px;
         border-radius: 0px;
     }
     
