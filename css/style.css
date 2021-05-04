@@ -103,7 +103,24 @@ header {
     color: white ;
     text-align: center;
 }
+footer {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
 
+footer * {
+    background-color: var(--Selection-bg-color);
+    margin: 10px;
+    padding: 5px;
+    border-radius: 2px;
+}
+
+
+#ProgramsMain {
+    background-image: url(/img/CodeLink.png);
+    background-size: 100%;
+}
 .ArtworkSection0{
     display: flex;
     flex-direction: row;
