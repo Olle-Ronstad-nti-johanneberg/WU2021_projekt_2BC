@@ -241,6 +241,43 @@ nav {
     display: block;
 }
 
+#DroneFootagePage{
+    display: grid;
+    grid-template-columns: 90vw 10vw;
+    grid-template-areas: 
+    "DroneImg Drone"
+    "DroneImg ShuterstockRef"
+    "DroneTextImg ShuterstockRef";
+}
+.DroneGrid {
+    border-radius: 5px;
+    background-color: var(--Selection-bg-color);
+    color: white;
+    padding: 20px;
+    margin: 30px;
+    justify-self: stretch;
+}
+#DroneImg {
+    grid-area: DroneImg;
+    padding: 0px;
+    width: calc(100% - 50px);
+}
+#Drone {
+    grid-area: Drone;
+}
+
+#droneImgText {
+    grid-area: DroneTextImg;
+}
+
+#ShutterstockRef {
+    grid-area: ShuterstockRef;
+}
+
+#InTextLink {
+    color: #d7ba7d;
+    text-decoration: underline;
+}
 
 @media screen and (max-width: 1000px){
     
@@ -309,5 +346,26 @@ nav {
         width: 100vw;
         flex-wrap: nowrap;
         align-items: center;
+    }
+    #DroneFootagePage{
+        display: grid;
+        grid-template-columns: 60vw 40vw;
+        grid-template-areas: 
+        "DroneImg DroneImg"
+        "DroneTextImg DroneTextImg"
+        "Drone ShuterstockRef";
+    }
+    .DroneGrid {
+        border-radius: 5px;
+        background-color: var(--Selection-bg-color);
+        color: white;
+        padding: 10px;
+        margin: 10px;
+        justify-self: stretch;
+    }
+    #DroneImg {
+        grid-area: DroneImg;
+        padding: 0px;
+        width: calc(100% - 20px);
     }
 }
